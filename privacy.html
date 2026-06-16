@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — ReceiveFlow</title>
+<meta name="description" content="ReceiveFlow privacy policy: what data the app accesses and stores, and how it is deleted.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="./">Receive<span>Flow</span></a>
+    <nav class="site">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<article class="legal">
+<div class="wrap">
+
+<h1>ReceiveFlow — Privacy Policy</h1>
+<p><strong>Last updated: June 11, 2026</strong></p>
+
+<p>This Privacy Policy explains what data the ReceiveFlow app ("ReceiveFlow", "we", "us")
+accesses, stores, and processes when you install it on your Shopify store, and the choices
+you have. By installing ReceiveFlow you agree to this policy.</p>
+
+<h2>1. Who we are</h2>
+<p>ReceiveFlow is a Shopify-embedded application that helps merchants create purchase orders,
+receive inbound stock on mobile and tablet devices, print product/barcode/price labels, and
+write received quantities back to Shopify inventory.</p>
+<p><strong>Contact:</strong> receiveflowapp@gmail.com</p>
+
+<h2>2. What data we access and store</h2>
+<p>ReceiveFlow is designed to collect the minimum data needed to operate.
+<strong>We do not collect, store, or process any of your customers' personal data.</strong></p>
+
+<h3>Data we read from Shopify (via the APIs you authorize)</h3>
+<p>ReceiveFlow requests only these access scopes:</p>
+<ul>
+  <li><code>read_products</code> — to search your catalog and build purchase orders.</li>
+  <li><code>read_inventory</code> and <code>write_inventory</code> — to read current stock and to write back received quantities.</li>
+  <li><code>read_locations</code> — to receive stock into the correct store location.</li>
+</ul>
+<p>We do <strong>not</strong> request access to orders, customers, or customer personal
+information, and we cannot read that data.</p>
+
+<h3>Data we store</h3>
+<p>We store only the following, keyed to your store's <code>myshopify.com</code> domain:</p>
+<ul>
+  <li><strong>Store/session information</strong> provided by Shopify during installation
+  (shop domain, access token, and the installing staff user's name/email as supplied by
+  Shopify's OAuth). This is used solely to authenticate the app to your store.</li>
+  <li><strong>Purchase order data</strong> you create in the app: PO references, supplier names,
+  line items (product title, SKU, barcode, price, cost, ordered/received quantities),
+  expected dates, and status.</li>
+  <li><strong>Receipt records</strong>: what was received and when.</li>
+  <li><strong>App settings</strong>: your selected label stock, currency, and cached primary
+  location ID.</li>
+</ul>
+<p>We do <strong>not</strong> store customer names, customer emails, customer addresses,
+order data, or payment/card data. We do not sell or share your data with third parties for
+advertising or marketing.</p>
+
+<h2>3. How we use the data</h2>
+<p>We use the data only to provide the app's functionality: creating and managing purchase
+orders, receiving stock, generating labels, and synchronizing received quantities back to
+your Shopify inventory. Server logs may record technical events (such as webhook receipt)
+for reliability and debugging; these do not contain customer personal data.</p>
+
+<h2>4. Where data is stored</h2>
+<p>App data is stored in the application's own database, scoped per store. Data is
+transmitted over encrypted connections (HTTPS) between your store, Shopify, and the app.</p>
+
+<h2>5. Data sharing and sub-processors</h2>
+<p>We use Shopify's platform APIs to read and write the data described above. We do not
+share your data with any third party except as required to operate the app's infrastructure
+(hosting/database provider) or as required by law. We never use your data to train
+advertising profiles and we do not sell it.</p>
+
+<h2>6. Data retention and deletion</h2>
+<ul>
+  <li><strong>On uninstall:</strong> Shopify sends an <code>app/uninstalled</code> webhook;
+  we delete the store's session/credentials.</li>
+  <li><strong>GDPR/privacy compliance webhooks:</strong> ReceiveFlow subscribes to Shopify's
+  three mandatory compliance webhooks:
+    <ul>
+      <li><code>customers/data_request</code> — we hold no customer data, so there is nothing to return.</li>
+      <li><code>customers/redact</code> — we hold no customer data, so there is nothing to erase.</li>
+      <li><code>shop/redact</code> (sent ~48 hours after uninstall) — we permanently delete
+      <strong>all</strong> data we hold for that store: purchase orders (and their lines and
+      receipts), suppliers, settings, and sessions.</li>
+    </ul>
+  </li>
+  <li><strong>Manual deletion:</strong> you may request deletion of your store's data at any
+  time by emailing receiveflowapp@gmail.com.</li>
+</ul>
+
+<h2>7. Your rights (GDPR / CCPA)</h2>
+<p>Because ReceiveFlow does not collect personal data about your customers, most data-subject
+requests will not apply to data we hold. For the limited store/staff information described
+above, you may request access, correction, or deletion by contacting
+receiveflowapp@gmail.com. We will respond within the timeframe required by applicable law.</p>
+<p>If you are an EU/EEA or UK merchant, you act as the data controller for your store and
+ReceiveFlow acts as a processor for the limited data it stores on your behalf.</p>
+
+<h2>8. Children's data</h2>
+<p>ReceiveFlow is a business tool not directed at children and does not knowingly process
+children's personal data.</p>
+
+<h2>9. Changes to this policy</h2>
+<p>We may update this policy as the app evolves or as legal requirements change. The
+"Last updated" date at the top will reflect any change, and material changes will be
+communicated through the app or by email where appropriate.</p>
+
+<h2>10. Contact</h2>
+<p>Questions or data requests: <strong>receiveflowapp@gmail.com</strong></p>
+
+</div>
+</article>
+
+<footer class="site">
+  <div class="wrap">
+    ReceiveFlow · <a href="mailto:receiveflowapp@gmail.com">receiveflowapp@gmail.com</a> ·
+    <a href="privacy.html">Privacy Policy</a> · <a href="support.html">Support</a>
+  </div>
+</footer>
+
+</body>
+</html>
