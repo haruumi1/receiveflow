@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://haruumi1.github.io/receiveflow/sitemap.xml
