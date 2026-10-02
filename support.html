@@ -32,11 +32,13 @@
 Bug reports, feature requests, and "how do I…" questions are all welcome.</p>
 
 <h2>FAQ</h2>
+<p><a href="quickstart.html">Start here: your first delivery</a></p>
 <dl class="faq">
+  <dt>Does it import native Shopify POs or Transfers?</dt>
+  <dd>No. ReceiveFlow keeps its own purchase orders.</dd>
   <dt>Does ReceiveFlow work on my phone?</dt>
-  <dd>Yes. Receiving works in the browser on any phone or tablet — open a purchase order,
-  tap the scan button, and use the camera to scan barcodes as stock arrives. No extra
-  hardware or POS subscription required.</dd>
+  <dd>Receiving is browser-based. Test camera scanning on your own device before relying on it.
+  Universal compatibility has not been verified. You can also enter quantities and barcodes manually.</dd>
 
   <dt>Can I receive part of a shipment now and the rest later?</dt>
   <dd>Yes. Partial receiving is built in: enter or scan what arrived, receive it, and the
@@ -44,8 +46,10 @@ Bug reports, feature requests, and "how do I…" questions are all welcome.</p>
 
   <dt>Which label printers are supported?</dt>
   <dd>Labels are generated as PDF in three stocks: Dymo 30334 (2.25&times;1.25"),
-  thermal 2&times;1", and thermal 2.25&times;1.25". Any printer that can print these PDF
-  sizes works, including Dymo and Zebra label printers and regular sheet printers.</dd>
+  thermal 2&times;1", and thermal 2.25&times;1.25". Check printer paper size, scaling and driver
+  settings, and print a small sample. Compatibility with every printer is not guaranteed.</dd>
+  <dt>Does the PDF contain only today's receipts?</dt>
+  <dd>Labels can reflect cumulative received quantities on the PO. Check before printing to avoid duplicates.</dd>
 
   <dt>Does receiving update my Shopify inventory?</dt>
   <dd>Yes. When you confirm a receipt, the received quantities are written back to your
